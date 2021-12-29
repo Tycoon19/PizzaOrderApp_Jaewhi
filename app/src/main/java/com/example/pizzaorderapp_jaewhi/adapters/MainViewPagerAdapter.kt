@@ -7,6 +7,8 @@ import com.example.pizzaorderapp_jaewhi.fragments.ChickenStoreListFragment
 import com.example.pizzaorderapp_jaewhi.fragments.PizzaStoreListFragment
 
 class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
+
+
     override fun getCount(): Int {
 
         return 2
@@ -17,7 +19,8 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm){
 
         return when(position){
             0 -> PizzaStoreListFragment()
-            1 -> ChickenStoreListFragment()
+            else -> ChickenStoreListFragment()
+
         }
 
     }
