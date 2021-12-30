@@ -21,6 +21,7 @@
             app:civ_border_width="2dp"/>
 
         <TextView
+            android:id="@+id/storeNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="가게 이름"
